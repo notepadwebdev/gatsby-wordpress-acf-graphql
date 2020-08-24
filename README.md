@@ -10,7 +10,7 @@ Uses [Docker](https://www.docker.com/get-started) to run WordPress, MySQL and ph
 ## Setup
 
 ```
-git clone git@github.com:notepadwebdev/gatsby-wordpress.git
+git clone git@github.com:notepadwebdev/gatsby-wordpress-acf-graphql.git
 ```
 
 
