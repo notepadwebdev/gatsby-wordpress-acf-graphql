@@ -1,0 +1,12 @@
+.site-header {
+  .container {
+    display: flex;
+    align-items: center;
+
+    > * {
+      &:first-child {
+        flex-basis: 200px;
+      }
+    }
+  }
+}

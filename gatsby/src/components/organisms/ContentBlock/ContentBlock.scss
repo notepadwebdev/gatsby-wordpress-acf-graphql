@@ -1,0 +1,19 @@
+@import '../../../scss/core/vars';
+
+.content-block {
+  @media (min-width: $mq-desktop-min) {
+    .container {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-gap: $l-gutter-width;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &--image-right {
+      .content-block__image {
+        order: 2;
+      }
+    }
+  }
+}
