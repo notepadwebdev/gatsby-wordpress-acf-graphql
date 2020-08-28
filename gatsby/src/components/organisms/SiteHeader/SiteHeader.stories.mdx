@@ -1,0 +1,42 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import SiteHeader from './SiteHeader';
+
+<Meta
+  title="Organisms/SiteHeader"
+  component={SiteHeader}
+/>
+
+export const Template = (args) => <SiteHeader {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  menuItems: {
+    nodes: [
+      {
+        id: `bmF2X21lbnVfaXRlbTo4`,
+        label: `Sample Page`,
+        path: `/sample-page/`
+      },
+      {
+        id: `bmF2X21lbnVfaXRlbToxNg==`,
+        label: `Privacy Policy`,
+        path: `/privacy-policy/`
+      }
+    ]
+  }
+}
+
+# SiteHeader
+
+The main header for the site.
+
+<ArgsTable of={SiteHeader} />
+
+## Stories
+---
+
+<Canvas>
+  <Story name="Default" args={Default.args}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

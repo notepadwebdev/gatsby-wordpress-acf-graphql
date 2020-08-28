@@ -1,31 +1,20 @@
-import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import './PrimaryNavigation.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import "./PrimaryNavigation.scss";
 
-const PrimaryNavigation = () => {
-  const data = useStaticQuery(graphql`
-    query primaryNavigation {
-      allWpMenu(filter: { slug: { eq: "primary-navigation" } }) {
-        nodes {
-          menuItems {
-            nodes {
-              id
-              label
-              path
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  return (data.allWpMenu.nodes && data.allWpMenu.nodes.length) ? (
+const PrimaryNavigation = ({ menuItems }) => {
+  return (
     <nav className="primary-navigation" role="navigation">
       <ul>
-        {data.allWpMenu.nodes[0].menuItems.nodes.map(node => {
+        {menuItems.nodes.map(node => {
           return (
             <li key={node.id}>
-              <Link to={node.path} activeClassName="active" partiallyActive={true}>
+              <Link
+                to={node.path}
+                activeClassName="active"
+                partiallyActive={true}
+              >
                 {node.label}
               </Link>
             </li>
@@ -33,7 +22,19 @@ const PrimaryNavigation = () => {
         })}
       </ul>
     </nav>
-  ) : null;
+  );
 };
 
 export default PrimaryNavigation;
+
+PrimaryNavigation.propTypes = {
+  menuItems: PropTypes.shape({
+    nodes: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        path: PropTypes.string.isRequired
+      })
+    )
+  }).isRequired
+};

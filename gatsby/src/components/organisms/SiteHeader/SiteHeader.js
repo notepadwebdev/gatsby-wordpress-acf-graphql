@@ -1,29 +1,30 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import { Link } from "gatsby"
 import PrimaryNavigation from '../PrimaryNavigation/PrimaryNavigation';
 import './SiteHeader.scss';
 
-const SiteHeader = ({ site }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      wp {
-        generalSettings {
-          title
-        }
-      }
-    }
-  `);
-
+const SiteHeader = ({ menuItems }) => {
   return (
     <header className="site-header">
       <div className="container">
         <h2>
-          <Link to="/">{data.wp.generalSettings.title}</Link>
+          <Link to="/">LOGO</Link>
         </h2>
-        <PrimaryNavigation />
+        {menuItems && <PrimaryNavigation menuItems={menuItems} />}
       </div>
     </header>
   );
 };
 
 export default SiteHeader;
+
+SiteHeader.propTypes = {
+  menuItems: PropTypes.shape({
+    nodes: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired
+    }))
+  })
+}

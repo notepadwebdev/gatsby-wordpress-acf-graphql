@@ -8,10 +8,10 @@ const Page = ({ data }) => {
   const page = data.allWpPage.nodes[0];
 
   return (
-    <Layout>
+    <Layout primaryMenu={data.allWpMenu.nodes[0].menuItems}>
       <SEO title={`${page.title} | ${data.wp.generalSettings.title}`} />
 
-      <div class="container">
+      <div className="container">
         <h1>{page.title}</h1>
         {page.content && (
           <div dangerouslySetInnerHTML={{ __html: page.content }} />
@@ -35,6 +35,17 @@ export const query = graphql`
         description
       }
     }
+    allWpMenu(filter: { slug: { eq: "primary-navigation" } }) {
+      nodes {
+        menuItems {
+          nodes {
+            id
+            label
+            path
+          }
+        }
+      }
+    }
     allWpPage(filter: { slug: { eq: $slug } }) {
       nodes {
         title
@@ -44,9 +55,8 @@ export const query = graphql`
           flexibleBlocks {
             ... on WpPage_Flexibleblocks_FlexibleBlocks_FbContentBlock {
               fieldGroupName
-              blockAlignment
-              blockTitle
-              blockWysiwyg
+              title
+              content
               image {
                 localFile {
                   childImageSharp {
@@ -56,6 +66,7 @@ export const query = graphql`
                   }
                 }
               }
+              alignment
             }
           }
         }
