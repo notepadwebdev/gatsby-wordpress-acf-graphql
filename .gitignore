@@ -5,6 +5,7 @@
 !.gitignore
 !.nvmrc
 !.gitkeep
+!.storybook
 
 # track readme.md in the root (i.e. do NOT ignore it)
 !README.md
