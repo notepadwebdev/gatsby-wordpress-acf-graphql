@@ -25,8 +25,8 @@
                     "sub_fields": [
                         {
                             "key": "field_5f41505708903",
-                            "label": "Block Title",
-                            "name": "block_title",
+                            "label": "Title",
+                            "name": "title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -45,8 +45,8 @@
                         },
                         {
                             "key": "field_5f41506708904",
-                            "label": "Block WYSIWYG",
-                            "name": "block_wysiwyg",
+                            "label": "Content",
+                            "name": "content",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -90,8 +90,8 @@
                         },
                         {
                             "key": "field_5f41508908906",
-                            "label": "Block Alignment",
-                            "name": "block_alignment",
+                            "label": "Alignment",
+                            "name": "alignment",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -150,5 +150,5 @@
     "description": "",
     "show_in_graphql": 1,
     "graphql_field_name": "flexibleBlocks",
-    "modified": 1598281909
+    "modified": 1598608548
 }

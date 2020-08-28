@@ -5,10 +5,10 @@ import SEO from '../components/SEO';
 
 const Home = ({ data }) => {
   return (
-    <Layout>
+    <Layout primaryMenu={data.allWpMenu.nodes[0].menuItems}>
       <SEO title={`${data.wp.generalSettings.title} | ${data.wp.generalSettings.description}`} />
 
-      <div class="container">
+      <div className="container">
         <h1>{data.wp.generalSettings.title}</h1>
 
         <h2>Pages</h2>
@@ -37,6 +37,17 @@ export const pageQuery = graphql`
       generalSettings {
         title
         description
+      }
+    }
+    allWpMenu(filter: { slug: { eq: "primary-navigation" } }) {
+      nodes {
+        menuItems {
+          nodes {
+            id
+            label
+            path
+          }
+        }
       }
     }
     allWpPage {

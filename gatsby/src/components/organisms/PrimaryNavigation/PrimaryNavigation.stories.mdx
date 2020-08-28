@@ -1,0 +1,39 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import PrimaryNavigation from './PrimaryNavigation';
+
+<Meta
+  title="Organisms/PrimaryNavigation"
+  component={PrimaryNavigation}
+/>
+
+export const Template = (args) => <PrimaryNavigation {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  menuItems: {
+    nodes: [
+      {
+        id: `bmF2X21lbnVfaXRlbTo4`,
+        label: `Menu Item 1`,
+        path: `/menu-item-1/`
+      },
+      {
+        id: `bmF2X21lbnVfaXRlbToxNg==`,
+        label: `Menu Item 2`,
+        path: `/menu-item-2/`
+      }
+    ]
+  }
+}
+
+# PrimaryNavigation
+
+The main navigation for the site.
+
+<ArgsTable of={PrimaryNavigation} />
+
+<Canvas>
+  <Story name="Default" args={Default.args}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
