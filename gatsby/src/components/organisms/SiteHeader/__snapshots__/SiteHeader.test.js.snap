@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site Footer component renders correctly 1`] = `
+<header
+  className="site-header"
+>
+  <div
+    className="container"
+  >
+    <h2>
+      <a
+        href="/"
+      >
+        LOGO
+      </a>
+    </h2>
+    <nav
+      className="primary-navigation"
+      role="navigation"
+    >
+      <ul>
+        <li>
+          <a
+            href="/sample-page/"
+          >
+            Sample Page
+          </a>
+        </li>
+        <li>
+          <a
+            href="/privacy-policy/"
+          >
+            Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;

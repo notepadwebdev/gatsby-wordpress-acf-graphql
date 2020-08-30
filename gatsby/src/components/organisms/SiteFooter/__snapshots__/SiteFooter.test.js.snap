@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site Footer component renders correctly 1`] = `
+<footer
+  className="site-footer"
+  role="contentinfo"
+>
+  <div
+    className="container"
+  >
+    <h2>
+      Site Footer
+    </h2>
+  </div>
+</footer>
+`;

@@ -11,7 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
+    "@babel/preset-react": "^7.10.4",
     "@storybook/addon-actions": "^6.0.19",
     "@storybook/addon-essentials": "^6.0.19",
     "@storybook/addon-links": "^6.0.19",
@@ -38,17 +39,21 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.2",
     "gatsby-plugin-sass": "^2.3.12",
+    "jest": "^26.4.2",
+    "jest-svg-transformer": "^1.0.0",
+    "jest-transformer-mdx": "^2.2.0",
     "node-sass": "^4.14.1",
     "prettier": "2.0.5",
     "react-is": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "sass-loader": "^10.0.1",
     "style-loader": "^1.2.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/notepadwebdev/gatsby-wordpress"
+    "url": "https://github.com/notepadwebdev/gatsby-wordpress-acf-graphql"
   },
   "bugs": {
-    "url": "https://github.com/notepadwebdev/gatsby-wordpress"
+    "url": "https://github.com/notepadwebdev/gatsby-wordpress-acf-graphql/issues"
   }
 }

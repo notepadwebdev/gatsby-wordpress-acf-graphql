@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flexible Blocks component renders correctly 1`] = `
+Array [
+  <section
+    className="content-block content-block--image-left"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="content-block__image"
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "maxHeight": null,
+              "maxWidth": null,
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            style={
+              Object {
+                "paddingBottom": "66.66666666666667%",
+                "width": "100%",
+              }
+            }
+          />
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABGnJoOo//xAAaEAACAwEBAAAAAAAAAAAAAAAAAgEDERIT/9oACAEBAAEFAkxSmvE5Fk95zT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAbEAABBAMAAAAAAAAAAAAAAAABAAIQERIhQv/aAAgBAQAGPwI229JzR1NYiP/EABoQAQEBAQADAAAAAAAAAAAAAAEAETEhYdH/2gAIAQEAAT8hKoi482RBOvUYC5XwmUu3/9oADAMBAAIAAwAAABCn7//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxAcn//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCxj//EABsQAQEBAAIDAAAAAAAAAAAAAAERACExQVFx/9oACAEBAAE/EHxOjwdZjKRqA6fXeY0DjkmUpBiJkUIPci/ZnSeXf//Z"
+            style={
+              Object {
+                "height": "100%",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <source
+              sizes="(max-width: 800px) 100vw, 800px"
+              srcSet="http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              sizes="(max-width: 800px) 100vw, 800px"
+              src="http://placekitten.com/200/300"
+              srcSet="http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w"
+              style={
+                Object {
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": "100%",
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w\\" src=\\"http://placekitten.com/200/300\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="content-block__copy"
+      >
+        <h2>
+          Block Title #1
+        </h2>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id enim itaque assumenda molestias accusamus ipsa odit, natus architecto sunt, voluptate ullam a vitae similique, quam necessitatibus facere blanditiis nobis eum!</div>",
+            }
+          }
+        />
+      </div>
+    </div>
+  </section>,
+  <section
+    className="content-block content-block--image-right"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="content-block__image"
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "maxHeight": null,
+              "maxWidth": null,
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            style={
+              Object {
+                "paddingBottom": "66.66666666666667%",
+                "width": "100%",
+              }
+            }
+          />
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABGnJoOo//xAAaEAACAwEBAAAAAAAAAAAAAAAAAgEDERIT/9oACAEBAAEFAkxSmvE5Fk95zT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAbEAABBAMAAAAAAAAAAAAAAAABAAIQERIhQv/aAAgBAQAGPwI229JzR1NYiP/EABoQAQEBAQADAAAAAAAAAAAAAAEAETEhYdH/2gAIAQEAAT8hKoi482RBOvUYC5XwmUu3/9oADAMBAAIAAwAAABCn7//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxAcn//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCxj//EABsQAQEBAAIDAAAAAAAAAAAAAAERACExQVFx/9oACAEBAAE/EHxOjwdZjKRqA6fXeY0DjkmUpBiJkUIPci/ZnSeXf//Z"
+            style={
+              Object {
+                "height": "100%",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 1,
+                "position": "absolute",
+                "top": 0,
+                "transitionDelay": "500ms",
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <source
+              sizes="(max-width: 800px) 100vw, 800px"
+              srcSet="http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              sizes="(max-width: 800px) 100vw, 800px"
+              src="http://placekitten.com/200/300"
+              srcSet="http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w"
+              style={
+                Object {
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": "100%",
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"http://placekitten.com/200/300 200w,
+http://placekitten.com/400/600 400w,
+http://placekitten.com/800/1200 800w,
+http://placekitten.com/1200/1800 1200w\\" src=\\"http://placekitten.com/200/300\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="content-block__copy"
+      >
+        <h2>
+          Block Title #2
+        </h2>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id enim itaque assumenda molestias accusamus ipsa odit, natus architecto sunt, voluptate ullam a vitae similique, quam necessitatibus facere blanditiis nobis eum!</div>",
+            }
+          }
+        />
+      </div>
+    </div>
+  </section>,
+]
+`;
