@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Site Footer component renders correctly 1`] = `
+exports[`Site Header component renders correctly 1`] = `
 <header
   className="site-header"
 >

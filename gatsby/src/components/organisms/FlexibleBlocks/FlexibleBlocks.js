@@ -19,5 +19,5 @@ const FlexibleBlocks = ({ blocks }) => {
 export default FlexibleBlocks;
 
 FlexibleBlocks.propTypes = {
-  blocks: PropTypes.array.isRequired
-}
+  blocks: PropTypes.array.isRequired,
+};

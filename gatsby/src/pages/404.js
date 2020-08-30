@@ -1,7 +1,7 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
+import React from "react";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const Error404 = ({ data }) => {
   return (
@@ -9,12 +9,14 @@ const Error404 = ({ data }) => {
       <SEO title={data.wp.generalSettings.title} />
       <h1>{data.wp.generalSettings.title}</h1>
       <p>Page not found.</p>
-      <p>Go to <Link to="/">homepage</Link>.</p>
+      <p>
+        Go to <Link to="/">homepage</Link>.
+      </p>
     </Layout>
-  )
-}
+  );
+};
 
-export default Error404
+export default Error404;
 
 export const pageQuery = graphql`
   query {
@@ -24,4 +26,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
