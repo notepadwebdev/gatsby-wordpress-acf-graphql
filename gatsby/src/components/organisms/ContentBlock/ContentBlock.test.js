@@ -24,7 +24,7 @@ const testData = {
   }
 }
 
-describe(`Site Footer component`, () => {
+describe(`Content Block component`, () => {
   it(`renders correctly`, () => {
     const component = renderer.create(
       <ContentBlock {...testData} />

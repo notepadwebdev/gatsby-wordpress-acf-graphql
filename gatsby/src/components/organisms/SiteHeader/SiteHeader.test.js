@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import SiteHeader from './SiteHeader';
 
-describe(`Site Footer component`, () => {
+describe(`Site Header component`, () => {
   it(`renders correctly`, () => {
     const component = renderer.create(
       <SiteHeader menuItems={{
