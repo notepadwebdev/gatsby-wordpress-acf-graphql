@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Site Footer component renders correctly 1`] = `
+exports[`Content Block component renders correctly 1`] = `
 <section
   className="content-block content-block--image-left"
 >
