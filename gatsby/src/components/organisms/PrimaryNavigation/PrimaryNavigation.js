@@ -7,7 +7,7 @@ const PrimaryNavigation = ({ menuItems }) => {
   return (
     <nav className="primary-navigation" role="navigation">
       <ul>
-        {menuItems.nodes.map(node => {
+        {menuItems.nodes.map((node) => {
           return (
             <li key={node.id}>
               <Link
@@ -33,8 +33,8 @@ PrimaryNavigation.propTypes = {
       PropTypes.shape({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
-        path: PropTypes.string.isRequired
+        path: PropTypes.string.isRequired,
       })
-    )
-  }).isRequired
+    ),
+  }).isRequired,
 };

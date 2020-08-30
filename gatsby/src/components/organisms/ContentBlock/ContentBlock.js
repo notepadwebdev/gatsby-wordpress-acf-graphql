@@ -32,9 +32,9 @@ ContentBlock.propTypes = {
   image: PropTypes.shape({
     localFile: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.object
-      })
-    })
+        fluid: PropTypes.object,
+      }),
+    }),
   }),
-  alignment: PropTypes.string
+  alignment: PropTypes.string,
 };

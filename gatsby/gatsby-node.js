@@ -17,8 +17,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
-
+  `).then((result) => {
     // Build all WP pages.
     result.data.allWpPage.nodes.forEach((node) => {
       createPage({
@@ -27,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           slug: node.slug,
         },
-      })
+      });
     });
 
     // Build all WP posts.
@@ -38,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           slug: node.slug,
         },
-      })
+      });
     });
   });
-}
+};
