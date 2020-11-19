@@ -1,5 +1,5 @@
-import React from "react";
-import "./SiteFooter.scss";
+import React from 'react';
+import './SiteFooter.scss';
 
 const SiteFooter = () => {
   return (

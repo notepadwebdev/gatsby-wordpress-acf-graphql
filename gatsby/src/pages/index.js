@@ -1,14 +1,12 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const Home = ({ data }) => {
   return (
     <Layout primaryMenu={data.allWpMenu.nodes[0].menuItems}>
-      <SEO
-        title={`${data.wp.generalSettings.title} | ${data.wp.generalSettings.description}`}
-      />
+      <SEO title={`${data.wp.generalSettings.title} | ${data.wp.generalSettings.description}`} />
 
       <div className="container">
         <h1>{data.wp.generalSettings.title}</h1>

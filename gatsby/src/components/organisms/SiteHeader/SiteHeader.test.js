@@ -1,6 +1,6 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import SiteHeader from "./SiteHeader";
+import React from 'react';
+import renderer from 'react-test-renderer';
+import SiteHeader from './SiteHeader';
 
 describe(`Site Header component`, () => {
   it(`renders correctly`, () => {
@@ -11,14 +11,14 @@ describe(`Site Header component`, () => {
             {
               id: `bmF2X21lbnVfaXRlbTo4`,
               label: `Sample Page`,
-              path: `/sample-page/`,
+              path: `/sample-page/`
             },
             {
               id: `bmF2X21lbnVfaXRlbToxNg==`,
               label: `Privacy Policy`,
-              path: `/privacy-policy/`,
-            },
-          ],
+              path: `/privacy-policy/`
+            }
+          ]
         }}
       />
     );

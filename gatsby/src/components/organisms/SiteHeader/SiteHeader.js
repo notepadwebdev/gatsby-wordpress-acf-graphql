@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
-import PrimaryNavigation from "../PrimaryNavigation/PrimaryNavigation";
-import "./SiteHeader.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import PrimaryNavigation from '../PrimaryNavigation/PrimaryNavigation';
+import './SiteHeader.scss';
 
 const SiteHeader = ({ menuItems }) => {
   return (
@@ -25,8 +25,8 @@ SiteHeader.propTypes = {
       PropTypes.shape({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
-        path: PropTypes.string.isRequired,
+        path: PropTypes.string.isRequired
       })
-    ),
-  }),
+    )
+  })
 };

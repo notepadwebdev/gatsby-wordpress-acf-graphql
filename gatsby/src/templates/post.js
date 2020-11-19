@@ -1,8 +1,8 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import SEO from "../components/SEO";
-import FlexibleBlocks from "../components/organisms/FlexibleBlocks/FlexibleBlocks";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import FlexibleBlocks from '../components/organisms/FlexibleBlocks/FlexibleBlocks';
 
 const Post = ({ data }) => {
   const page = data.allWpPost.nodes[0];

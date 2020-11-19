@@ -1,6 +1,6 @@
-import React from "react";
-import SiteHeader from "./organisms/SiteHeader/SiteHeader";
-import SiteFooter from "./organisms/SiteFooter/SiteFooter";
+import React from 'react';
+import SiteHeader from './organisms/SiteHeader/SiteHeader';
+import SiteFooter from './organisms/SiteFooter/SiteFooter';
 
 const Layout = ({ children, primaryMenu }) => {
   return (

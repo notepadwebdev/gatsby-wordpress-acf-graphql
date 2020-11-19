@@ -1,6 +1,6 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import SiteFooter from "./SiteFooter";
+import React from 'react';
+import renderer from 'react-test-renderer';
+import SiteFooter from './SiteFooter';
 
 describe(`Site Footer component`, () => {
   it(`renders correctly`, () => {

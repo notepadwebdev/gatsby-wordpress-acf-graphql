@@ -24,8 +24,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.slug,
         component: path.resolve(`./src/templates/page.js`),
         context: {
-          slug: node.slug,
-        },
+          slug: node.slug
+        }
       });
     });
 
@@ -35,8 +35,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.slug,
         component: path.resolve(`./src/templates/post.js`),
         context: {
-          slug: node.slug,
-        },
+          slug: node.slug
+        }
       });
     });
   });

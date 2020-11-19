@@ -1,5 +1,5 @@
 global.___loader = {
-  enqueue: jest.fn(),
+  enqueue: jest.fn()
 };
 
 // Ensure tests fail for prop type errors.

@@ -7,26 +7,29 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "develop-m": "gatsby develop -H 0.0.0.0 -p 8000",
+    "eslint": "eslint --ignore-path .gitignore .",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "npm run eslint",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "NODE_ENV=production start-storybook -s ./storybook-assets -p 6006",
+    "build-storybook": "NODE_ENV=production build-storybook -s ./storybook-assets"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run test"
+      "pre-commit": "npm run lint && npm run format && npm run test"
     }
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.24.47",
+    "gatsby": "^2.26.1",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-source-filesystem": "^2.3.24",
-    "gatsby-source-wordpress-experimental": "^1.3.6",
+    "gatsby-source-wordpress-experimental": "^3.0.0",
     "gatsby-transformer-sharp": "^2.5.13",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -37,13 +40,15 @@
     "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
-    "@storybook/addon-actions": "^6.0.19",
-    "@storybook/addon-essentials": "^6.0.19",
-    "@storybook/addon-links": "^6.0.19",
-    "@storybook/preset-scss": "^1.0.2",
-    "@storybook/react": "^6.0.19",
+    "@storybook/addon-actions": "^6.1.0",
+    "@storybook/addon-essentials": "^6.1.0",
+    "@storybook/addon-links": "^6.1.0",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.2",
+    "eslint": "^7.13.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "gatsby-plugin-sass": "^2.3.12",
     "husky": "^4.2.5",
     "jest": "^26.4.2",

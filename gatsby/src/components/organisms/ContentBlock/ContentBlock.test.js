@@ -1,6 +1,6 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import ContentBlock from "./ContentBlock";
+import React from 'react';
+import renderer from 'react-test-renderer';
+import ContentBlock from './ContentBlock';
 
 const testData = {
   title: `Block Title`,
@@ -13,11 +13,11 @@ const testData = {
           aspectRatio: 1.5,
           src: `http://placekitten.com/200/300`,
           srcSet: `http://placekitten.com/200/300 200w,\nhttp://placekitten.com/400/600 400w,\nhttp://placekitten.com/800/1200 800w,\nhttp://placekitten.com/1200/1800 1200w`,
-          sizes: `(max-width: 800px) 100vw, 800px`,
-        },
-      },
-    },
-  },
+          sizes: `(max-width: 800px) 100vw, 800px`
+        }
+      }
+    }
+  }
 };
 
 describe(`Content Block component`, () => {

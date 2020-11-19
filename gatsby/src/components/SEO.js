@@ -1,6 +1,6 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = ({ title, description, lang, meta }) => {
   const { wp } = useStaticQuery(
@@ -21,26 +21,26 @@ const SEO = ({ title, description, lang, meta }) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={title}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:title`,
-          content: title,
+          content: title
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:type`,
-          content: `website`,
-        },
+          content: `website`
+        }
       ].concat(meta)}
     />
   );
@@ -49,7 +49,7 @@ const SEO = ({ title, description, lang, meta }) => {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: ``
 };
 
 export default SEO;

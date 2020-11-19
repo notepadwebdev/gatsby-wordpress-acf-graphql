@@ -18,3 +18,8 @@ global.___loader = {
 window.___navigate = (pathname) => {
   action("NavigateTo:")(pathname);
 };
+
+// __PATH_PREFIX__ is used inside gatsby-link an other various places. For storybook not to crash, you need to set it as well.
+global.__PATH_PREFIX__ = "";
+global.__BASE_PATH__ = ""; // See https://github.com/gatsbyjs/gatsby/issues/10668#issuecomment-639014099
+

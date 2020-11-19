@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ContentBlock from "../ContentBlock/ContentBlock";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ContentBlock from '../ContentBlock/ContentBlock';
 
 const FlexibleBlocks = ({ blocks }) => {
   const myBlocks = blocks.map((block, index) => {
@@ -19,5 +19,5 @@ const FlexibleBlocks = ({ blocks }) => {
 export default FlexibleBlocks;
 
 FlexibleBlocks.propTypes = {
-  blocks: PropTypes.array.isRequired,
+  blocks: PropTypes.array.isRequired
 };

@@ -1,14 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Img from "gatsby-image";
-import classnames from "classnames";
-import "./ContentBlock.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import classnames from 'classnames';
+import './ContentBlock.scss';
 
-const ContentBlock = ({ image, title, content, alignment = "image-left" }) => {
+const ContentBlock = ({ image, title, content, alignment = `image-left` }) => {
   return (
-    <section
-      className={classnames(`content-block`, `content-block--${alignment}`)}
-    >
+    <section className={classnames(`content-block`, `content-block--${alignment}`)}>
       <div className="container">
         {image && image.localFile && (
           <div className="content-block__image">
@@ -32,9 +30,9 @@ ContentBlock.propTypes = {
   image: PropTypes.shape({
     localFile: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.object,
-      }),
-    }),
+        fluid: PropTypes.object
+      })
+    })
   }),
-  alignment: PropTypes.string,
+  alignment: PropTypes.string
 };
